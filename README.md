@@ -21,3 +21,20 @@ From a development standpoint, MT Classics demonstrates structured front-end arc
 MT Classics is currently under active development. The platform is not yet complete, and future updates will introduce additional features, refined design elements, expanded movie collections, and enhanced interactivity.
 
 This project serves as both a portfolio showcase and an evolving creative platform, reflecting continuous improvement in design thinking, user experience, and front-end development practices.
+
+
+## ✨ Features
+
+- 🎬 Dynamic movie grid
+- 🔍 Genre categorization
+- 🎥 Trailer integration
+- 🌙 Modern dark UI
+- 📱 Responsive design
+
+
+## 🛠 Tech Stack
+
+- HTML5
+- CSS3
+- JavaScript (Vanilla)
+- GitHub Pages
