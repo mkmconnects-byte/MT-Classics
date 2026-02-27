@@ -38,3 +38,15 @@ This project serves as both a portfolio showcase and an evolving creative platfo
 - CSS3
 - JavaScript (Vanilla)
 - GitHub Pages
+
+
+## 📸 Preview
+
+### 🏠 Home Page
+![Home](assets/home.png)
+
+### 🎬 Movies Grid
+![Movies](assets/movies.png)
+
+### 🎥 Movie Details
+![Details](assets/details.png)
