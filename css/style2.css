@@ -1,0 +1,131 @@
+.site-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #141414;
+}
+
+.site-header h1{
+    margin: 0;
+}
+
+.site-header nav a{
+    color: #bbb;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+    color: #ffffff;
+}
+
+body.movie-detail {
+  margin: 0;
+  background: #0f0f0f;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Hero */
+.hero {
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  min-height: 60vh;
+  background: linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,.2));
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 40px;
+}
+
+
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #2286c0;
+}
+
+.hero p{
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+}
+
+.hero p {
+  max-width: 100%;
+  color: #ccc;
+  font-size: large;
+}
+
+/* Trailer */
+.movie-info {
+  padding: 120px;
+  display: flex;
+  justify-content: center;
+  height: 40vh;
+}
+
+.movie-info iframe {
+  width: 80%;
+  max-width: 900px;
+  height: 500px;
+  border-radius: 12px;
+  border: none;
+}
+
+/* ---------- CAST SECTION ---------- */
+
+.cast-section {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.cast-section h2 {
+  font-size: 2rem;
+  color: #2286c0;
+  margin-bottom: 30px;
+}
+
+.cast-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cast-card {
+  width: 120px;
+  text-align: center;
+}
+
+.cast-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: none;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.8);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cast-card:hover img {
+  transform: scale(1.06);
+  box-shadow: 0 0 30px rgba(34,134,192,0.6),
+              0 12px 30px rgba(0,0,0,0.85);
+}
+
+.cast-card p {
+  color: #bcdcff;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="movies">
+        <header class="tvsite-header">
+        <h1>TV-SERIES</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="tvseries.html" class="active">TV Series</a>
+        </nav>
+        </header>
+
+        <br><br>
+
+        
+        <div class="movie-search"><input type="text" id="searchInput" placeholder="Search movies..."></div>
+        <br>
+        <section class="top-rated">
+            <h2>MY TOP FIVE</h2>
+            <div class="movie-grid" id="topSeriesGrid"></div>
+        </section>
+        <br>
+
+        <section class="tv-pic">
+
+        <div class="tv-pic-content"> <h1>WHEN YOU PLAY THE GAME OF THRONES YOU EITHER WIN OR DIE</h1>
+            <p>MT CLASSIC REVIEWS</p>
+            <a href="tvseries.html" class="movie-pic-btn">Explore Shows</a>
+        
+        </div>
+        </section>
+
+
+        
+
+        <section class="categories">
+
+  <!-- Drama -->
+  <div class="category" data-category="Drama">
+    <div class="category-header">
+      <h3>Drama</h3>
+      <button class="toggle-btn">↷</button>
+    </div>
+
+    <div class="movie-grid category-content" id="dramaSeriesGrid"></div>
+    <div class="movie-grid category-extra" id="dramaSeriesExtra"></div>
+  </div>
+
+  <!-- Action -->
+  <div class="category" data-category="Action">
+    <div class="category-header">
+      <h3>Action</h3>
+      <button class="toggle-btn">↷</button>
+    </div>
+
+    <div class="movie-grid category-content" id="actionSeriesGrid"></div>
+    <div class="movie-grid category-extra" id="actionSeriesExtra"></div>
+  </div>
+
+  <!-- Fantasy -->
+  <div class="category" data-category="Fantasy">
+    <div class="category-header">
+      <h3>Fantasy</h3>
+      <button class="toggle-btn">↷</button>
+    </div>
+
+    <div class="movie-grid category-content" id="fantasySeriesGrid"></div>
+    <div class="movie-grid category-extra" id="fantasySeriesExtra"></div>
+  </div>
+
+  <div class="category">
+  <div class="category-header">
+    <h3>Crime</h3>
+    <button class="toggle-btn">↷</button>
+  </div>
+  <div class="movie-grid category-content" id="crimeSeriesGrid"></div>
+  <div class="movie-grid category-extra" id="crimeSeriesExtra"></div>
+</div>
+
+<div class="category">
+  <div class="category-header">
+    <h3>Mystery</h3>
+    <button class="toggle-btn">↷</button>
+  </div>
+  <div class="movie-grid category-content" id="mysterySeriesGrid"></div>
+  <div class="movie-grid category-extra" id="mysterySeriesExtra"></div>
+</div>
+
+<div class="category">
+  <div class="category-header">
+    <h3>Sci-Fi</h3>
+    <button class="toggle-btn">↷</button>
+  </div>
+  <div class="movie-grid category-content" id="scifiSeriesGrid"></div>
+  <div class="movie-grid category-extra" id="scifiSeriesExtra"></div>
+</div>
+
+
+</section>
+
+            <script src="js/page-trasition.js"></script>
+            <script src="js/tvseries.js"></script>
+</body>
+</html>

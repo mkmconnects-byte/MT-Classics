@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Obsidian Emerald Palette</title>
+<style>
+:root{
+  --void: #050807;
+  --shadow: #0A1411;
+  --surface: #0F1F1A;
+  --card: #142C25;
+  --border: #1E4B3B;
+  --text: #E6F6F0;
+  --muted: #7FA89A;
+  --accent: #3CFFB0;
+  --secondary: #16C784;
+  --glow: #4DFF9C;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+  font-family: Inter, system-ui, sans-serif;
+  background: radial-gradient(circle at 30% 20%, var(--surface), var(--void));
+  color: var(--text);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.palette{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+  gap:20px;
+  max-width:900px;
+  width:90%;
+}
+
+.swatch{
+  background: var(--card);
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:16px;
+  text-align:center;
+  box-shadow:
+    0 15px 40px rgba(0,0,0,.7),
+    inset 0 0 30px rgba(60,255,176,.05);
+  transition:.3s;
+}
+
+.swatch:hover{
+  transform: translateY(-6px);
+  box-shadow:
+    0 20px 70px rgba(60,255,176,.35),
+    0 0 25px rgba(77,255,156,.5);
+}
+
+.color{
+  height:80px;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+.label{
+  font-size:.85rem;
+  color: var(--muted);
+}
+</style>
+</head>
+
+<body>
+
+<div class="palette">
+  <div class="swatch"><div class="color" style="background:#050807"></div><div class="label">Void</div></div>
+  <div class="swatch"><div class="color" style="background:#0A1411"></div><div class="label">Shadow</div></div>
+  <div class="swatch"><div class="color" style="background:#0F1F1A"></div><div class="label">Surface</div></div>
+  <div class="swatch"><div class="color" style="background:#142C25"></div><div class="label">Card</div></div>
+  <div cl

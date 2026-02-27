@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Game of Thrones",
+    "year": 2011,
+    "seasons": 8,
+    "rating": "TV-MA",
+    "genre": ["Fantasy","Drama"],
+    "poster": "https://i.imgur.com/KJ3ZJ3f.jpg",
+    "backdrop": "https://i.imgur.com/4K6Z7sC.jpg",
+    "description": "Noble families fight for control over Westeros.",
+    "trailer": "https://www.youtube.com/embed/KPLWWIOCOOQ"
+  },
+  {
+    "id": 2,
+    "title": "Breaking Bad",
+    "year": 2008,
+    "seasons": 5,
+    "rating": "TV-MA",
+    "genre": ["Crime","Drama"],
+    "poster": "https://i.imgur.com/2l5a0Qx.jpg",
+    "backdrop": "https://i.imgur.com/Z9a2FQZ.jpg",
+    "description": "A chemistry teacher becomes a drug kingpin.",
+    "trailer": "https://www.youtube.com/embed/HhesaQXLuRY"
+  },
+  {
+    "id": 3,
+    "title": "Stranger Things",
+    "year": 2016,
+    "seasons": 4,
+    "rating": "TV-14",
+    "genre": ["Mystery","Sci-Fi"],
+    "poster": "https://i.imgur.com/Yo9G8jK.jpg",
+    "backdrop": "https://i.imgur.com/0a3F5hF.jpg",
+    "description": "Kids uncover supernatural mysteries.",
+    "trailer": "https://www.youtube.com/embed/b9EkMc79ZSU"
+  }
+]

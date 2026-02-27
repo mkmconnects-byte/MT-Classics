@@ -1,0 +1,713 @@
+body {
+    background-color: #0f0f0f;
+    color: #eaeaea;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+h1{
+    font-size: 120px;
+    color: #2286c0;
+    margin: 0;
+}
+
+header{
+    background-color: #222;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+main{
+    padding: 4px;
+}
+
+footer{
+    text-align: center;
+    padding: 8px;
+    background-color: #222;
+    color: #fff;
+}
+
+/*---MOVIES---*/
+
+
+.site-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #141414;
+}
+
+.site-header h1{
+    margin: 0;
+}
+
+.site-header nav a{
+    color: #bbb;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+    color: #ffffff;
+}
+
+/*---Movie Grid---*/
+
+
+.movie-pages{
+    padding: 40px;
+}
+
+
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    justify-content: center;
+}
+
+
+/*---Movie Card---*/
+
+.movie-card{
+    position: relative;
+    height: 260px;
+    background-color: #1c1c1c;
+    border-radius: 12px;
+    text-decoration: none;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover{
+    transform: scale(1.05);
+    box-shadow:0 12px 35px rgba(0,0,0,0.7);
+}
+
+.movie-card:hover .movie-overlay{
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.movie-title {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+}
+
+
+.movie-card{
+    position: relative;
+    height: 260px;
+    border-radius: 12px;
+    border: 1px solid #2a2a2a;
+    overflow: hidden;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    transition: background 0.3s ease;
+}
+
+.movie-card .card-preview{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:0;
+    pointer-events:none;
+    transition:opacity .3s ease;
+}
+
+.movie-card:hover .card-preview{
+    opacity:1;
+}
+
+
+/*---Movie Search Bar---*/
+
+.movie-search{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.movie-search input {
+    width: 400px;
+    max-width: 90%;
+    padding: 12px 18px;
+    font-size: 1rem;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+
+    background-color: #1f1f1f;
+    color: #fff;
+}
+
+.movie-search input::placeholder {
+    color: #888;
+}
+
+
+/* ---------- MOVIE MAIN SECTION---------- */
+
+.hero {
+    height: 100vh;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('../sources/css-images/daredevil-born-6000x3375-22298.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: #e50914;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+@keyframes slowZoom {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 125%;
+    }
+}
+
+.hero {
+    animation: slowZoom 20s infinite alternate;
+}
+
+
+/* -----------TV SERIES MAIN SECTION---------- */
+
+.series_main{
+    height: 80vh;
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url('../sources/css-images/thunderbolts-8k-7680x7680-22287.jpg');
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.series_main-content h2{
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color:cornsilk;
+}
+
+
+.series_main-content p{
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+.series-hero-btn{
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: #e50914;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3 ease;
+}
+
+.series-hero-btn:hover{
+    transform: scale(1.1);
+}
+
+@keyframes slowZoomTV {
+    from { background-size: 100%; }
+    to { background-size: 125%; }
+}
+
+.series_main {
+    animation: slowZoomTV 20s infinite alternate;
+}
+
+
+
+/* ----------Movie Section Category---------- */
+
+.category-content {
+    display: grid;
+    margin-top: 20px;
+}
+
+.category-extra {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition:
+        max-height 0.9s ease,
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+/* when opened */
+.category-extra.open {
+    max-height: 2000px; /* big enough for all movies */
+    opacity: 1;
+    transform: translateY(0);
+    margin-top: 30px;
+}
+
+.category {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #222;
+    padding-bottom: 20px;
+}
+
+.category-extra,
+.category-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+}
+
+
+
+.category-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.category-header h3 {
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.toggle-btn {
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.categories,
+.top-rated {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+/* ----------Fixing Center Issue---------- */
+
+.top-rated h2,
+.category-header h3 {
+    text-align: center;
+    width: 100%;
+}
+
+/* ----------Fixing card color Issue---------- */
+
+
+.movie-card {
+    background-size: cover;
+    background-position: center;
+}
+
+.movie-overlay {
+    background: rgba(0,0,0,0.25); /* lighter */
+}
+
+
+/* ----------movie pic content---------- */
+
+.movie-pic {
+    height: 100vh;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('../sources/css-images/daredevil-born-5120x2880-22121.jpg');
+
+
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.movie-pic-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.movie-pic-content p {
+    font-size: 1.3rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.movie-pic-btn {
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: #e50914;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.movie-pic-btn:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes slowZoom {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 125%;
+    }
+}
+
+.movie-pic {
+    animation: slowZoom 20s infinite alternate;
+}
+
+
+/* ----------page trasnsition smoothness---------- */
+
+/* Page transition effect */
+body {
+    opacity: 0;
+    transform: scale(0.98);
+    animation: pageFadeIn 0.7s ease forwards;
+}
+
+@keyframes pageFadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+/*---Split Scetion main page---*/
+
+.split-section{
+    display: flex;
+    height: 70vh;
+    margin-top: 10px;
+}
+
+.split-box{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.4s ease;
+    background-size: cover;
+    background-position: center;
+}
+
+.split-box h2{
+    font-size: 3rem;
+    margin-bottom: 15px;
+    color: cornsilk;
+}
+
+.split-box p{
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    color: #ccc;
+}
+
+.split-btn{
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: #e50914;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.split-box.imdb{
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+        url('../sources/css-images/marvel-thunderbolts-3840x2160-22372.jpg');
+}
+
+.split-box.new{
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+        url('../sources/css-images/dominique-thorne-7680x4320-22633.jpg');
+}
+
+
+/*---Highlighted text input in main page---*/
+
+.new-input{
+    margin-top: 200px;
+    height: 100vh;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.new-input h1{
+    color:#fff;
+    text-align: center;
+}
+
+.new-input p{
+    text-align:center;
+}
+                                /*---Adding Trasistion to the letters---*/
+
+
+
+.reveal {
+    opacity: 0;
+    transform: translateY(150px);
+    transition: opacity 1s ease, transform 3s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+/*---Image scrolling in main page---*/
+
+.scroll-pic {
+  position: relative;
+  height: 120vh;
+  overflow: hidden;
+}
+
+.scroll-bg {
+  position: absolute;
+  top: -60%;
+  left: 0;
+  width: 100%;
+  height: 220%;
+  background-image: url("../sources/css-images/view-rock-formations-with-nature-landscape.jpg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.4;
+  will-change: transform;
+}
+
+
+.scroll-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+}
+
+.scroll-content h1{
+    text-align: center;
+    color: white;
+}
+
+.scroll-content p{
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+}
+
+/*------tv-series------*/
+
+
+.tvsite-header {
+    padding: 20px;
+    text-align: center;
+    background-color: #141414;
+}
+
+.tvsite-header h1{
+    margin: 0;
+}
+
+.tvsite-header nav a{
+    color: #bbb;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.tvsite-header nav a:hover,
+.tvsite-header nav a.active {
+    color: #ffffff;
+}
+
+
+.tv-pic {
+    height: 100vh;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+        url('../sources/SERIES/breakingbad/wp3963420-breaking-bad-wallpapers.jpg');
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.tv-pic-content h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+.tv-pic-content p {
+    font-size: 1.3rem;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.tv-pic-btn {
+    padding: 14px 30px;
+    border-radius: 30px;
+    background: #e50914;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: transform 0.3s ease;
+}
+
+.tv-pic-btn:hover {
+    transform: scale(1.1);
+}
+
+
+@keyframes slowZoom {
+    from {
+        background-size: 100%;
+    }
+    to {
+        background-size: 125%;
+    }
+}
+
+.tv-pic {
+    animation: slowZoom 20s infinite alternate;
+}
+
+
+/*------movies1 card problem from movies.js------*/
+
+body:not(.movies) .movie-card,
+body:not(.movies) .card-preview {
+  all: unset;
+}
+
+/* === LOCK MOVIE CARD STYLES TO MOVIES PAGE ONLY === */
+body:not(.movies) .movie-card,
+body:not(.movies) .movie-overlay,
+body:not(.movies) .movie-title,
+body:not(.movies) .card-preview {
+  display: none !important;
+}
+
+.see-more-wrap{
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.see-more-btn{
+    padding: 14px 34px;
+    border-radius: 30px;
+    background: #2286c0;
+    color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all .3s ease;
+}
+
+.see-more-btn:hover {
+  background: #1a6ea0;
+  transform: scale(1.08);
+}
