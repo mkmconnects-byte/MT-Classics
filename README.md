@@ -1,3 +1,11 @@
+# 🎬 MT Classics
+
+![Status](https://img.shields.io/badge/status-live-brightgreen)
+![Built With](https://img.shields.io/badge/built%20with-HTML%20CSS%20JS-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+
+
 MT Classics is a movie review and streaming-style web platform developed for film enthusiasts who appreciate both classic and modern cinema. The project aims to create a structured and immersive environment where users can explore curated film collections, read in-depth reviews, and access selected viewing or trailer content within a single, cohesive interface.
 
 The platform is built around clarity and user experience. Films are organized into well-defined genre categories such as Action, Mystery, and Drama, enabling intuitive navigation. Extended collection pages are implemented to maintain a clean main layout while still providing access to a broader catalog of titles. This approach balances content depth with visual simplicity.
