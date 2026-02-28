@@ -18,7 +18,7 @@ body {
 
 h1{
     font-size: 120px;
-    color: #2286c0;
+    color: var(--foreground);
     margin: 0;
     letter-spacing: 3px;
     font-weight: 900;
@@ -44,7 +44,7 @@ header{
 /* Legacy/simple header pages (about.html, contact.html) */
 header h1 {
     font-size: 32px;
-    color: #00d9ff;
+    color: var(--purple);
     margin: 0;
     padding: 14px 0 6px;
     letter-spacing: 3px;
@@ -58,7 +58,7 @@ header nav {
 }
 
 header nav a {
-    color: #ddd;
+    color: var(--comment);
     text-decoration: none;
     padding: 8px 14px;
     margin: 0 6px;
@@ -71,16 +71,16 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #00d9ff;
-    background: rgba(0, 217, 255, 0.06);
-    border-color: rgba(0, 217, 255, 0.12);
+    color: var(--foreground);
+    background: rgba(189,147,249,0.06);
+    border-color: rgba(189,147,249,0.12);
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
 
 header nav a.active {
-    color: #00d9ff;
-    background: rgba(0, 217, 255, 0.12);
-    border-color: rgba(0, 217, 255, 0.2);
+    color: var(--purple);
+    background: rgba(189,147,249,0.12);
+    border-color: rgba(189,147,249,0.2);
 }
 
 .header-container {
@@ -117,7 +117,7 @@ header nav a.active {
 
 .tagline {
     font-size: 0.9rem;
-    color: #aaa;
+    color: var(--comment);
     margin: 0;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -154,7 +154,7 @@ header nav a.active {
     left: 50%;
     width: 0;
     height: 2px;
-    background: #00d9ff;
+    background: var(--purple);
     transform: translateX(-50%);
     transition: width 0.3s ease;
 }
@@ -186,9 +186,9 @@ main{
 footer{
     text-align: center;
     padding: 20px;
-    background: linear-gradient(135deg, #1a1a1a 0%, #222 50%, #1a1a1a 100%);
-    color: #fff;
-    border-top: 3px solid #00d9ff;
+    background: linear-gradient(135deg, var(--current-line) 0%, #222 50%, var(--current-line) 100%);
+    color: var(--foreground);
+    border-top: 3px solid var(--purple);
     box-shadow: 0 -8px 20px rgba(0, 0, 0, 0.7);
     font-weight: 600;
     letter-spacing: 1px;
@@ -197,12 +197,13 @@ footer{
 /*---MOVIES---*/
 
 
-.site-header {
-    background: linear-gradient(135deg, #0a0e27 0%, #1a2a4a 50%, #0a0e27 100%);
-    color: #fff;
+.site-header,
+.tvsite-header {
+    background: linear-gradient(135deg, rgba(40,42,54,0.95) 0%, rgba(24,20,36,0.92) 50%);
+    color: var(--foreground);
     padding: 0;
-    border-bottom: 2px solid #00d9ff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(189,147,249,0.12);
+    box-shadow: 0 6px 30px rgba(0,0,0,0.6);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -221,7 +222,7 @@ footer{
 .site-header .logo {
     font-size: 32px;
     font-weight: 900;
-    color: #00d9ff;
+    color: var(--purple);
     margin: 0;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -229,8 +230,8 @@ footer{
 }
 
 .site-header .logo:hover {
-    color: #fff;
-    text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+    color: var(--foreground);
+    text-shadow: 0 0 20px rgba(189,147,249,0.3);
 }
 
 .site-header .navbar {
@@ -242,7 +243,7 @@ footer{
 }
 
 .site-header .nav-link {
-    color: #ddd;
+    color: var(--comment);
     text-decoration: none;
     padding: 10px 18px;
     border-radius: 8px;
@@ -262,15 +263,15 @@ footer{
     left: 50%;
     width: 0;
     height: 2px;
-    background: #00d9ff;
+    background: var(--purple);
     transform: translateX(-50%);
     transition: width 0.3s ease;
 }
 
 .site-header .nav-link:hover {
-    color: #00d9ff;
-    background: rgba(0, 217, 255, 0.1);
-    border-color: rgba(0, 217, 255, 0.3);
+    color: var(--foreground);
+    background: rgba(189,147,249,0.1);
+    border-color: rgba(189,147,249,0.3);
 }
 
 .site-header .nav-link:hover::after {
@@ -278,9 +279,9 @@ footer{
 }
 
 .site-header .nav-link.active {
-    color: #00d9ff;
-    background: rgba(0, 217, 255, 0.15);
-    border-color: rgba(0, 217, 255, 0.4);
+    color: var(--purple);
+    background: rgba(189,147,249,0.15);
+    border-color: rgba(189,147,249,0.4);
 }
 
 .site-header .nav-link.active::after {
@@ -402,8 +403,8 @@ main.movies .movie-search {
     border-radius: 999px;
     border: 1px solid rgba(255,255,255,0.06);
     outline: none;
-    background-color: rgba(31,31,31,0.95);
-    color: #fff;
+    background-color: var(--current-line);
+    color: var(--foreground);
     box-shadow: 0 6px 18px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.02);
     transition: box-shadow 0.18s ease, transform 0.12s ease;
 }
@@ -465,7 +466,7 @@ main.movies .movie-search {
 
 .hero-content p {
     font-size: 1.3rem;
-    color: #ccc;
+    color: var(--comment);
     margin-bottom: 30px;
     letter-spacing: 1px;
 }
@@ -547,7 +548,7 @@ main.movies .movie-search {
 .series_main-content p{
     font-size: 1.3rem;
     margin-bottom: 25px;
-    color: #ccc;
+    color: var(--comment);
 }
 
 .series-hero-btn{
@@ -640,7 +641,7 @@ main.movies .movie-search {
 
 .category-header h3 {
     font-size: 1.6rem;
-    color: #fff;
+    color: var(--foreground);
 }
 
 .toggle-btn {
@@ -707,7 +708,7 @@ main.movies .movie-search {
 
 .movie-pic-content p {
     font-size: 1.3rem;
-    color: #ccc;
+    color: var(--comment);
     margin-bottom: 30px;
 }
 
@@ -914,7 +915,7 @@ body {
 }
 
 .split-box:hover {
-    border-color: #00d9ff;
+    border-color: var(--purple);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
 }
 
@@ -1045,11 +1046,12 @@ body {
 
 
 .tvsite-header {
-    background: linear-gradient(135deg, #0a0e27 0%, #1a2a4a 50%, #0a0e27 100%);
-    color: #fff;
+    /* uses same theme as site-header above */
+    background: linear-gradient(135deg, rgba(40,42,54,0.95) 0%, rgba(24,20,36,0.92) 50%);
+    color: var(--foreground);
     padding: 0;
-    border-bottom: 2px solid #00d9ff;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid rgba(189,147,249,0.12);
+    box-shadow: 0 6px 30px rgba(0,0,0,0.6);
     position: sticky;
     top: 0;
     z-index: 100;
@@ -1068,7 +1070,7 @@ body {
 .tvsite-header .logo {
     font-size: 32px;
     font-weight: 900;
-    color: #00d9ff;
+    color: var(--purple);
     margin: 0;
     letter-spacing: 4px;
     text-transform: uppercase;
@@ -1076,8 +1078,8 @@ body {
 }
 
 .tvsite-header .logo:hover {
-    color: #fff;
-    text-shadow: 0 0 20px rgba(0, 217, 255, 0.5);
+    color: var(--foreground);
+    text-shadow: 0 0 20px rgba(189,147,249,0.3);
 }
 
 .tvsite-header .navbar {
@@ -1089,7 +1091,7 @@ body {
 }
 
 .tvsite-header .nav-link {
-    color: #ddd;
+    color: var(--comment);
     text-decoration: none;
     padding: 10px 18px;
     border-radius: 8px;
@@ -1109,15 +1111,15 @@ body {
     left: 50%;
     width: 0;
     height: 2px;
-    background: #00d9ff;
+    background: var(--purple);
     transform: translateX(-50%);
     transition: width 0.3s ease;
 }
 
 .tvsite-header .nav-link:hover {
-    color: #00d9ff;
-    background: rgba(0, 217, 255, 0.1);
-    border-color: rgba(0, 217, 255, 0.3);
+    color: var(--foreground);
+    background: rgba(189,147,249,0.1);
+    border-color: rgba(189,147,249,0.3);
 }
 
 .tvsite-header .nav-link:hover::after {
@@ -1125,9 +1127,9 @@ body {
 }
 
 .tvsite-header .nav-link.active {
-    color: #00d9ff;
-    background: rgba(0, 217, 255, 0.15);
-    border-color: rgba(0, 217, 255, 0.4);
+    color: var(--purple);
+    background: rgba(189,147,249,0.15);
+    border-color: rgba(189,147,249,0.4);
 }
 
 .tvsite-header .nav-link.active::after {
@@ -1157,15 +1159,15 @@ body {
 
 .tv-pic-content p {
     font-size: 1.3rem;
-    color: #ccc;
+    color: var(--comment);
     margin-bottom: 30px;
 }
 
 .tv-pic-btn {
     padding: 14px 30px;
     border-radius: 30px;
-    background: #e50914;
-    color: #fff;
+    background: linear-gradient(135deg, var(--purple) 0%, var(--pink) 100%);
+    color: var(--bg);
     text-decoration: none;
     font-weight: bold;
     transition: transform 0.3s ease;
