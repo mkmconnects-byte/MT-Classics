@@ -1,5 +1,5 @@
 body {
-    background-color: #0f0f0f;
+    background-color: #071227; /* deep navy to match cyan accents */
     color: #eaeaea;
     font-family: 'Segoe UI', sans-serif;
 }
@@ -306,7 +306,7 @@ footer{
 }
 
 .movie-card:hover{
-    transform: scale(1.05);
+    /* removed scale zoom on hover to keep images stable */
     box-shadow:0 12px 35px rgba(0,0,0,0.7);
 }
 
@@ -333,12 +333,13 @@ footer{
     position: relative;
     height: 260px;
     border-radius: 12px;
-    border: 1px solid #2a2a2a;
+    border: 1px solid rgba(255,255,255,0.04);
     overflow: hidden;
     text-decoration: none;
     background-size: cover;
     background-position: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease;
+    background-color: #071827; /* subtle dark-blue to match site background */
 }
 
 .movie-overlay {
@@ -371,6 +372,13 @@ footer{
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+/* slightly lower the search bar on the movies page for better spacing */
+.movie-pages .movie-search,
+.movies .movie-search,
+main.movies .movie-search {
+    margin-top: 22px;
 }
 
 .movie-search input {
@@ -489,18 +497,7 @@ footer{
 
 
 
-@keyframes slowZoom {
-    from {
-        background-size: 100%;
-    }
-    to {
-        background-size: 125%;
-    }
-}
-
-.hero {
-    animation: slowZoom 20s infinite alternate;
-}
+/* removed slow background zoom to keep images static */
 
 
 /* -----------TV SERIES MAIN SECTION---------- */
@@ -574,14 +571,7 @@ footer{
     right: 100%;
 }
 
-@keyframes slowZoomTV {
-    from { background-size: 100%; }
-    to { background-size: 125%; }
-}
-
-.series_main {
-    animation: slowZoomTV 20s infinite alternate;
-}
+/* removed slow background zoom on series section */
 
 
 
@@ -732,9 +722,7 @@ footer{
     }
 }
 
-.movie-pic {
-    animation: slowZoom 20s infinite alternate;
-}
+/* movie-pic background remains static now (no slow zoom) */
 
 
 /* ----------page trasnsition smoothness---------- */
