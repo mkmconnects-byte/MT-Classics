@@ -3,7 +3,7 @@ console.log("TV SERIES JS LOADED");
 /* ---------- CREATE SERIES CARD ---------- */
 function createSeriesCard(s) {
   const a = document.createElement("a");
-  a.href = `series.html?id=${s.id}`;
+  a.href = `series-detail.html?id=${s.id}`;
   a.className = "movie-card";
   a.style.backgroundImage = `url(${s.poster})`;
 

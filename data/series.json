@@ -6,7 +6,7 @@
     "seasons": 8,
     "rating": "TV-MA",
     "genre": ["Fantasy","Drama"],
-    "poster": "https://i.imgur.com/KJ3ZJ3f.jpg",
+    "poster": "sources/SERIES/gameofthrones/1-Game-of-thrones.jpg",
     "backdrop": "https://i.imgur.com/4K6Z7sC.jpg",
     "description": "Noble families fight for control over Westeros.",
     "trailer": "https://www.youtube.com/embed/KPLWWIOCOOQ"
@@ -18,7 +18,7 @@
     "seasons": 5,
     "rating": "TV-MA",
     "genre": ["Crime","Drama"],
-    "poster": "https://i.imgur.com/2l5a0Qx.jpg",
+    "poster": "sources/SERIES/breakingbad/images.jpg",
     "backdrop": "https://i.imgur.com/Z9a2FQZ.jpg",
     "description": "A chemistry teacher becomes a drug kingpin.",
     "trailer": "https://www.youtube.com/embed/HhesaQXLuRY"
@@ -30,7 +30,7 @@
     "seasons": 4,
     "rating": "TV-14",
     "genre": ["Mystery","Sci-Fi"],
-    "poster": "https://i.imgur.com/Yo9G8jK.jpg",
+    "poster": "sources/SERIES/strangerthings/strangerthings.jpg",
     "backdrop": "https://i.imgur.com/0a3F5hF.jpg",
     "description": "Kids uncover supernatural mysteries.",
     "trailer": "https://www.youtube.com/embed/b9EkMc79ZSU"

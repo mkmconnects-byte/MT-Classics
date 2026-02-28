@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - MT Classics</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .about-container {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 40px;
+            background: rgba(20, 20, 20, 0.8);
+            border: 2px solid rgba(34, 134, 192, 0.3);
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .about-container h2 {
+            font-size: 2.5rem;
+            color: #2286c0;
+            text-align: center;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
+            font-weight: 900;
+        }
+
+        .about-container h3 {
+            font-size: 1.5rem;
+            color: #00d9ff;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .about-container p {
+            color: #ddd;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .about-section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: rgba(34, 134, 192, 0.05);
+            border-left: 4px solid #00d9ff;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+
+        .about-section:hover {
+            background: rgba(34, 134, 192, 0.1);
+            box-shadow: 0 4px 15px rgba(229, 9, 20, 0.1);
+        }
+
+        .mission-text {
+            font-size: 1.2rem;
+            color: cornsilk;
+            font-weight: 600;
+            font-style: italic;
+            text-align: center;
+            padding: 20px;
+            background: rgba(229, 9, 20, 0.05);
+            border-radius: 8px;
+            margin: 30px 0;
+            border-left: 4px solid cornsilk;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(34, 134, 192, 0.1), rgba(229, 9, 20, 0.05));
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid rgba(34, 134, 192, 0.2);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: #00d9ff;
+            box-shadow: 0 6px 20px rgba(229, 9, 20, 0.2);
+        }
+
+        .feature-card h4 {
+            color: #2286c0;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #bbb;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .about-container {
+                margin: 40px 20px;
+                padding: 30px 20px;
+            }
+
+            .about-container h2 {
+                font-size: 2rem;
+            }
+
+            .about-container h3 {
+                font-size: 1.3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+         <h1 style="text-align: center;">MT CLASSICS</h1>
+         <nav style="text-align: center;">
+            <a href="index.html">Home</a>
+            <a href="movies.html">Movies</a>
+            <a href="tvseries.html">TV Series</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+         </nav>
+    </header>
+
+    <main>
+        <div class="about-container">
+            <h2>About MT Classics</h2>
+
+            <div class="mission-text">
+                "Discover the finest movies and shows through honest, passionate reviews."
+            </div>
+
+            <div class="about-section">
+                <h3>Welcome</h3>
+                <p>Welcome to MT Classics, your ultimate destination for movie and television series reviews and recommendations. Whether you're a cinephile searching for hidden gems or a casual viewer looking for your next binge-worthy series, MT Classics is here to guide you through the world of entertainment.</p>
+            </div>
+
+            <div class="about-section">
+                <h3>Our Mission</h3>
+                <p>At MT Classics, our mission is to celebrate exceptional filmmaking and storytelling. We believe that great cinema and television transcend time, and their impact on our culture is immeasurable. Our goal is to profile these works that inspire, challenge, and entertain audiences worldwide.</p>
+                <p>We provide honest, thoughtful reviews of classic and contemporary films and series, offering insights that help you discover your next favorite watch.</p>
+            </div>
+
+            <div class="about-section">
+                <h3>What We Offer</h3>
+                <p>MT Classics features an ever-growing collection of carefully curated movie and TV series reviews. Each review includes:</p>
+                <ul style="color: #ddd; margin-top: 15px;">
+                    <li>In-depth analysis and critique</li>
+                    <li>IMDb ratings and user feedback</li>
+                    <li>Plot summaries and key information</li>
+                    <li>Recommendation insights</li>
+                    <li>Trailer links for quick previews</li>
+                </ul>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h4>📽️ 300+ Movies</h4>
+                    <p>Extensive collection of classic and modern cinema</p>
+                </div>
+                <div class="feature-card">
+                    <h4>📺 100+ Series</h4>
+                    <p>Comprehensive TV series reviews and rankings</p>
+                </div>
+                <div class="feature-card">
+                    <h4>⭐ Expert Reviews</h4>
+                    <p>Honest and thoughtful critiques</p>
+                </div>
+                <div class="feature-card">
+                    <h4>🎬 Curated Lists</h4>
+                    <p>Top-rated picks and recommendations</p>
+                </div>
+            </div>
+
+            <div class="about-section" style="margin-top: 40px;">
+                <h3>Get Involved</h3>
+                <p>Have a film or series recommendation? Found an error in our reviews? We'd love to hear from you! Reach out through our <a href="contact.html" style="color: #00d9ff; text-decoration: none; font-weight: 600;">Contact page</a> to share your thoughts, suggestions, or feedback.</p>
+            </div>
+
+            <div class="about-section">
+                <h3>Thank You</h3>
+                <p>Thank you for visiting MT Classics. We hope our reviews inspire you to discover new films and series that will enrich your entertainment experience. Sit back, relax, and let's explore the world of great cinema together!</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Manuja's Movie Reviews</p>
+    </footer>
+
+    <script src="js/page-trasition.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Series Detail</title>
+
+  <link rel="stylesheet" href="css/series-detail.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="series-detail">
+
+  <header class="series-header">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="tvseries.html" class="active">TV Series</a>
+    </nav>
+  </header>
+
+  <div class="series-hero" id="seriesHero">
+    <div class="series-hero-overlay">
+      <h1 id="seriesTitle"></h1>
+      <p id="seriesDesc"></p>
+    </div>
+  </div>
+
+  <section class="series-info">
+    <iframe id="seriesTrailer" allowfullscreen></iframe>
+  </section>
+
+  <section class="series-cast">
+    <h2>Cast</h2>
+    <div class="series-cast-grid" id="seriesCastGrid"></div>
+  </section>
+
+  <script src="js/series-detail.js"></script>
+  <script src="js/page-trasition.js"></script>
+
+</body>
+</html>
