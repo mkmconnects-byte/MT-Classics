@@ -50,3 +50,12 @@ This project serves as both a portfolio showcase and an evolving creative platfo
 
 ### 🎥 Movie Details
 ![Details](assets/details.png)
+
+### 🐿️ About
+![About](assets/about.png)
+
+### 🤖 Contact
+![contact](assets/contact.png)
+
+
+
