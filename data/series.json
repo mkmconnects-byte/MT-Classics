@@ -34,5 +34,41 @@
     "backdrop": "https://i.imgur.com/0a3F5hF.jpg",
     "description": "Kids uncover supernatural mysteries.",
     "trailer": "https://www.youtube.com/embed/b9EkMc79ZSU"
+  },
+  {
+    "id": 4,
+    "title": "The Crown",
+    "year": 2016,
+    "seasons": 5,
+    "rating": "TV-MA",
+    "genre": ["Drama"],
+    "poster": "sources/SERIES/thecrown/thecrown.jpg",
+    "backdrop": "https://i.imgur.com/6Z5Rm3S.jpg",
+    "description": "The reign of Queen Elizabeth II.",
+    "trailer": "https://www.youtube.com/embed/8KcvMeqpLk0"
+  },
+  {
+    "id": 5,
+    "title": "The Mandalorian",
+    "year": 2019,
+    "seasons": 3,
+    "rating": "TV-14",
+    "genre": ["Sci-Fi","Action"],
+    "poster": "sources/SERIES/themandalorian/mandalorian.jpg",
+    "backdrop": "https://i.imgur.com/U0x9o8R.jpg",
+    "description": "A lone bounty hunter travels the galaxy.",
+    "trailer": "https://www.youtube.com/embed/aOC8E8z_ifw"
+  },
+  {
+    "id": 6,
+    "title": "Sherlock",
+    "year": 2010,
+    "seasons": 4,
+    "rating": "TV-14",
+    "genre": ["Mystery","Crime"],
+    "poster": "sources/SERIES/sherlock/sherlock.jpg",
+    "backdrop": "https://i.imgur.com/9k5Lz1a.jpg",
+    "description": "Modern update of Sherlock Holmes.",
+    "trailer": "https://www.youtube.com/embed/mKq3cÖ"
   }
 ]
