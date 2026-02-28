@@ -85,3 +85,26 @@ document.querySelectorAll(".toggle-btn").forEach(btn => {
     btn.textContent = extra.classList.contains("open") ? "↶" : "↷";
   });
 });
+
+/* ---------- SEARCH FILTER ---------- */
+const searchInput = document.getElementById('searchInput');
+if (searchInput) {
+  // add an icon container if missing (keeps markup untouched)
+  const parent = searchInput.parentElement;
+  if (parent && !parent.querySelector('.search-icon')) {
+    const icon = document.createElement('span');
+    icon.className = 'search-icon';
+    parent.insertBefore(icon, searchInput);
+  }
+
+  searchInput.addEventListener('input', (e) => {
+    const q = e.target.value.trim().toLowerCase();
+    const cards = document.querySelectorAll('.movie-card');
+    cards.forEach(card => {
+      const titleEl = card.querySelector('.movie-title');
+      const title = titleEl ? titleEl.textContent.toLowerCase() : '';
+      // also check data attributes or alt text if needed in future
+      card.style.display = title.includes(q) ? '' : 'none';
+    });
+  });
+}
