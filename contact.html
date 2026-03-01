@@ -200,29 +200,55 @@
     </footer>
 
     <script src="js/page-trasition.js"></script>
+    
     <script>
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const subject = document.getElementById('subject').value;
-            const message = document.getElementById('message').value;
-            
-            // Create mailto link (you can replace this with an actual form submission later)
-            const mailtoLink = `mailto:contact@mtclassics.com?subject=${encodeURIComponent(subject)}&body=Name: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0A%0AMessage:%0A${encodeURIComponent(message)}`;
-            
-            // Show success message
-            alert('Thank you for reaching out! Your message will be sent.');
-            
-            // Reset form
-            this.reset();
-            
-            // Optional: Uncomment to actually send email
-            // window.location.href = mailtoLink;
-        });
-    </script>
+  const form = document.getElementById("contactForm");
+  const btn = form.querySelector('button[type="submit"]');
+
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const payload = {
+      name: document.getElementById("name").value.trim(),
+      email: document.getElementById("email").value.trim(),
+      subject: document.getElementById("subject").value.trim(),
+      message: document.getElementById("message").value.trim(),
+    };
+
+    // basic validation
+    if (!payload.name || !payload.email || !payload.subject || !payload.message) {
+      alert("Please fill all fields.");
+      return;
+    }
+
+    btn.disabled = true;
+    const oldText = btn.textContent;
+    btn.textContent = "Sending...";
+
+    try {
+      const res = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+
+      const data = await res.json();
+
+      if (data.ok) {
+        alert("Message sent ✅");
+        form.reset();
+      } else {
+        alert("Failed ❌ " + (data.error || ""));
+      }
+    } catch (err) {
+      console.error(err);
+      alert("Server error ❌");
+    } finally {
+      btn.disabled = false;
+      btn.textContent = oldText;
+    }
+  });
+</script>
 
 </body>
 </html>
